@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #fcfaf0;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	text-align: center;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 800px;
+	background-color: #fcfaf0;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	padding: 10px 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content h1 em {
+	font-size: 50%;
+}
+.container .content p {
+	text-align: left;
+}
+.container .content h1 em {
+	color: #f7ca34;
+}
+.container .content h1 em {
+	font-style: normal;
+	font-weight: bold;
+}
+.container .content p {
+	font-size: 80%;
+}
+.container .content p {
+	font-size: 90%;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="content">
+    <h1><em>NM2207 Final Project Assignment <br /></em><em>&quot;Catch Puggy the Pug&quot; Game </em><br />
+    <em>Zhang Yinxingzi (A0116000J)</em></h1>
+    <p><br />
+    In this final project, I&rsquo;ve created a simple game. I got my inspiration from the game called &lsquo;whack a mole&rsquo;. In my game, in a specific timeframe, users will be &ldquo;clicking&rdquo; on the object (the pug) to &ldquo;hit&rdquo; or in this case &ldquo;catch&rdquo; the pug that appears randomly from different parts of the screen, and the score displayed at the end will be the total amount of times that the user has clicked on the pug.
+ <br> <br>
+ I chose this because I could exercise most of the skills that we have learnt in lesson Week 6 (Games and Animation), Week 7 (Sounds), Week 9 (Arrays and Loops), Week 12 (Emitter). <br> <br>
+ I made the background a ballpit gif, as I thought that it would be possible to use the emitter that we have learnt in Week 12 tutorial session. The emitter shoots out a dot regularly, showing a kind of movement of balls in the ballpit. The balls emitted are set to the same size of the balls on the gif to show consistency. <br> <br>I used the interval timer since I needed regular timings for the balls to be shoot out from the emitter, and it has to be consistent with the movement of balls in the background gif. <br> <br>I have also created an array so as to hold the x and y position of the pug, using what we learnt from Week 9.  Also, in the pool of ballpit, the pug is moving randomly across the 6 different positions that I&rsquo;ve created.  <br> <br>I added a joyful music tune to the game, as the setting is in a ballpit where there&rsquo;s fun going on. And I thought it was appropriate to match every click on the dog to a dog barking sound because technically in the game we are &ldquo;catching&rdquo; the dog by clicking it. <br> <br>Everything is put onto the &ldquo;SVG&rdquo; page that we have been using in class, but I styled it with my own design, a pleasant light orange as the background colour, and gave it a simple font, to make it suit the aesthetic of the game, and appear aesthetically appealing to the users.</p>
+<h2>&nbsp;</h2>
+  <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>
